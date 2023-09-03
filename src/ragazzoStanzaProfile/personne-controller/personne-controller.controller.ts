@@ -42,7 +42,7 @@ export class PersonneControllerController {
     
 
       const getIpModem=await axios.get('https://api.ipify.org?format=json')
-      console.log(getIpModem?.data)
+      console.log(getIpModem?.data.ip)
       
    
     const fixedParameter = uuidv4();
